@@ -1,0 +1,105 @@
+{
+  "vendor": "vtex",
+  "name": "store-animations",
+  "version": "1.0.0",
+  "builders": {
+    "react": "3.x",
+    "store": "4.x",
+    "styles": "2.x",
+    "docs": "0.x"
+  },
+  "scripts": {
+    "lint": "vtex lint --fix",
+    "prettify": "vtex prettify",
+    "test": "vtex test"
+  },
+  "dependencies": {
+    "vtex.styleguide": "9.x",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "peerDependencies": {
+    "@vtex/api": "^1.x",
+    "framer-motion": "^10.x"
+  },
+  "settings": {
+    "title": "Store Animations",
+    "description": "App para manejar animaciones y transiciones en microinteracciones de eCommerce",
+    "store-resources": {
+      "blocks": [
+        "store/blocks/search.json",
+        "store/blocks/cart.json",
+        "store/blocks/checkout.json"
+      ]
+    },
+    "policies": [
+      {
+        "name": "search-animation",
+        "props": {
+          "animationType": {
+            "type": "string",
+            "enum": ["fade", "slide", "scale", "none"],
+            "default": "fade"
+          },
+          "duration": {
+            "type": "number",
+            "default": 300
+          },
+          "delay": {
+            "type": "number",
+            "default": 0
+          }
+        }
+      },
+      {
+        "name": "cart-animation",
+        "props": {
+          "animationType": {
+            "type": "string",
+            "enum": ["fade", "slide", "bounce", "none"],
+            "default": "slide"
+          },
+          "duration": {
+            "type": "number",
+            "default": 400
+          },
+          "easing": {
+            "type": "string",
+            "default": "ease-in-out"
+          }
+        }
+      },
+      {
+        "name": "checkout-animation",
+        "props": {
+          "animationType": {
+            "type": "string",
+            "enum": ["fade", "flip", "rotate", "none"],
+            "default": "fade"
+          },
+          "duration": {
+            "type": "number",
+            "default": 500
+          },
+          "stagger": {
+            "type": "number",
+            "default": 50
+          }
+        }
+      }
+    ],
+    "metrics": {
+      "performance": {
+        "enabled": true,
+        "thresholds": {
+          "lcp": 2500,
+          "fid": 100,
+          "cls": 0.1
+        }
+      }
+    }
+  },
+  "billingOptions": {
+    "type": "free"
+  }
+}

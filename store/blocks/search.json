@@ -1,0 +1,17 @@
+{
+  "type": "search",
+  "components": [
+    {
+      "type": "search-input",
+      "props": {
+        "placeholder": "Buscar productos..."
+      }
+    },
+    {
+      "type": "search-results",
+      "props": {
+        "animation": "fade-in"
+      }
+    }
+  ]
+}

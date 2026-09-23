@@ -1,0 +1,27 @@
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+.fade-in {
+  animation: fade 0.5s ease-in-out;
+}
+
+.slide-in {
+  animation: slide 0.5s ease-in-out;
+}
+
+.animated {
+  will-change: transform, opacity;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.animated:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}

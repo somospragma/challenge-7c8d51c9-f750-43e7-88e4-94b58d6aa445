@@ -1,0 +1,17 @@
+{
+  "type": "cart",
+  "components": [
+    {
+      "type": "cart-summary",
+      "props": {
+        "animation": "slide-in"
+      }
+    },
+    {
+      "type": "cart-items",
+      "props": {
+        "animation": "fade-in"
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "search": {
+    "type": "object",
+    "properties": {
+      "query": {
+        "type": "string"
+      },
+      "results": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "price": {
+              "type": "number"
+            }
+          }
+        }
+      }
+    }
+  },
+  "cart": {
+    "type": "object",
+    "properties": {
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "quantity": {
+              "type": "number"
+            },
+            "price": {
+              "type": "number"
+            }
+          }
+        }
+      }
+    }
+  }
+}

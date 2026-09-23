@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./",
+    "paths": {
+      "@vtex/*": ["./node_modules/@vtex/*"],
+      "react": ["./node_modules/react"],
+      "react-dom": ["./node_modules/react-dom"],
+      "@types/*": ["./node_modules/@types/*"],
+      "styles/*": ["./styles/*"],
+      "react/*": ["./react/*"],
+      "store/*": ["./store/*"]
+    },
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "types": ["react", "react-dom", "vtex.styleguide"]
+  },
+  "include": [
+    "react/**/*.ts",
+    "react/**/*.tsx",
+    "store/**/*.json",
+    "styles/**/*.css",
+    "manifest.json"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts",
+    "**/*.spec.tsx",
+    "**/*.stories.tsx"
+  ],
+  "compileOnSave": false
+}

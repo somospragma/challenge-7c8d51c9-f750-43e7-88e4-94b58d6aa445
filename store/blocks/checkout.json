@@ -1,0 +1,37 @@
+{
+  "name": "checkout",
+  "blocks": [
+    {
+      "name": "checkout-container",
+      "type": "container",
+      "blocks": [
+        {
+          "name": "checkout-header",
+          "type": "text-block",
+          "content": "Checkout"
+        },
+        {
+          "name": "checkout-summary",
+          "type": "checkout-summary-block"
+        },
+        {
+          "name": "checkout-form",
+          "type": "form-block"
+        },
+        {
+          "name": "checkout-payment",
+          "type": "payment-block"
+        },
+        {
+          "name": "checkout-animation",
+          "type": "animation-block",
+          "config": {
+            "animation": "fadeIn",
+            "duration": 0.5,
+            "delay": 0
+          }
+        }
+      ]
+    }
+  ]
+}
